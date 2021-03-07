@@ -1,86 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Abhishek-Arcee</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="I'm Gamer and student based in India." />
-    <link rel="shortcut icon" href="Logos/shortcut-icon.jpg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" content="Tovade">
+    <meta name="description" content="My personal portfolio">
+    <meta name="og:image" content="/assets/img/perfil.png">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
-      href="./assets/CSS/main.css"
-      media="none"
-      onload="if(media!=='all')media='all'"
     />
+
+    <title>Tovade</title>
   </head>
   <body>
-    <style>
-      img {
-        display: block;
-        border: 3px solid tomato;
-        margin-left: auto;
-        border-radius: 55%;
-        margin-right: auto;
-      }
-      body {
-        background-image: url("Logos/background2.jpeg");
-        padding-top: 150px;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 240px;
-        background-size: cover;
-      }
-    </style>
-    <img
-      src="Logos/profile.jpeg"
-      alt="profile"
-      class="center"
-      usemap="#workmap"
-      width="300"
-      height="300"
-    />
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Abhishek Maurya</span>
-          <span class="site-description">• Programmer • Student • Gamer •</span>
-        </h1>
-        <div class="header-icons">
-          <a href="https://instagram.com/1211abhishek?igshid=oj22vb463m8h">
-            <img
-              src="Logos/1611228490959.png"
-              alt="Instagram"
-              style="width:52px;height:52px;padding-left:20px;padding-right:20px"
-            />
-          </a>
-          <a href="mailto:janardanmaurya238@gmail.com">
-            <img
-              src="Logos/gmail.png"
-              alt="Mail"
-              style="width:52px;height:52px;padding-left:20px;padding-right:20px"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/user/31ewj2k7oxat4u3fv4xafmn7rjby?si=YUsMZxfxRkSjR0jLzVD-WA"
-          >
-            <img
-              src="Logos/1611229270442.png"
-              alt="Spotify"
-              style="width:52px;height:52px;padding-left:20px;padding-right:20px;filter: saturate(650%)"
-            />
-          </a>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Tovade</a>
         </div>
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#Games" data-scroll>Games</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="/contact.html" class="nav__link">Contact me</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Tovade</span><br />
+            Discord bot developer
+          </h1>
+        </div>
+
+        <div class="home__social">
+          <a href="https://github.com/tovade" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <img src="assets/img/perfil.png" alt="" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Tovade</h2>
+            <p class="about__text">Hello im a developer that creates bot and still learning some css/html currently im working on andoi!</p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">My skills</h2>
+            <p class="skills__text">Here you can see what im good at.</p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">37%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">87%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+
+      <!--===== CONTACT =====-->
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Tovade</p>
+      <div class="footer__social">
+        <a href="https://twitter.com/tweeterfortnit1" class="footer__icon"
+          ><i class="bx bxl-twitter"></i
+        ></a>
       </div>
-    </div>
-    <a class="down" href="#about" data-scroll
-      ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
-    ></a>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <script src="./assets/js/google-analytics.js"></script>
-    <script src="./assets/js/main.js"></script>
+      <p>&#169; 2020 copyright all right reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
